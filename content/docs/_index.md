@@ -1,6 +1,6 @@
 ---
 title: Blog
-next: first post
+next: first-post
 ---
 
 This will cover blog stories. Currently, under construction. 
