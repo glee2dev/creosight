@@ -40,7 +40,7 @@ toc: false
 ## Explore
 {{< cards >}}
   {{< card link="about" title="About" icon="user" >}}
-  {{< card link="posts" title="Posts" icon="pen-tool" >}}
+  {{< card link="posts" title="Posts" icon="book-open" >}}
   {{< card link="projects" title="Projects" icon="briefcase" >}}
 {{< /cards >}}
 
