@@ -1,15 +1,15 @@
 ---
-title: My Site
+title: CREOINSIGHT
 toc: false
 ---
 
-This is the landing page.
+Currently, under construction! 
 
 ## Explore
 
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
   {{< card link="about" title="About" icon="user" >}}
+  {{< card link="docs" title="Docs" icon="book-open" >}}
 {{< /cards >}}
 
 ## Documentation
