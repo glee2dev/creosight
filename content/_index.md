@@ -14,4 +14,5 @@ Currently, under construction!
 
 ## Documentation
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+---
+Theme by [Hextra](https://imfing.github.io/hextra).
