@@ -1,23 +1,35 @@
 <div class="tabs">
+    <!-- Tab navigation -->
     <ul class="tab-buttons">
-      {{ range .Params.languages }}
+      {{ range . }}
         <li>
-          <button onclick="showTab('{{ .id }}')">{{ .label }}</button>
+          <button class="tab-button" onclick="showTab('{{ .id }}')">{{ .label }}</button>
         </li>
       {{ end }}
     </ul>
   
-    {{ range .Params.languages }}
-      <div id="{{ .id }}" class="tab-content" style="display: {{ if eq .id $.Params.defaultTab }}block{{ else }}none{{ end }}">
-        {{ .content | safeHTML }}
+    <!-- Tab content -->
+    {{ range . }}
+      <div id="{{ .id }}" class="tab-content" style="display: none;">
+        {{ .content | markdownify }}
       </div>
     {{ end }}
   </div>
   
   <script>
-    function showTab(tabId) {
-      var tabs = document.querySelectorAll('.tab-content');
-      tabs.forEach(tab => tab.style.display = 'none');
-      document.getElementById(tabId).style.display = 'block';
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+      // Show the first tab by default
+      const firstTabId = document.querySelector('.tab-content').id;
+      document.getElementById(firstTabId).style.display = 'block';
+  
+      // Tab switching functionality
+      document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', function () {
+          document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.style.display = 'none';
+          });
+          document.getElementById(button.getAttribute('onclick').match(/'([^']+)'/)[1]).style.display = 'block';
+        });
+      });
+    });
   </script>

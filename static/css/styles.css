@@ -4,13 +4,16 @@
   
   .tab-buttons {
     list-style: none;
-    padding: 0;
     display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
+    padding: 0;
+    margin: 0 0 15px 0;
   }
   
-  .tab-buttons li button {
+  .tab-buttons li {
+    margin-right: 10px;
+  }
+  
+  .tab-buttons .tab-button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -19,11 +22,12 @@
     border-radius: 5px;
   }
   
-  .tab-buttons li button:hover {
+  .tab-buttons .tab-button:hover {
     background-color: #0056b3;
   }
   
   .tab-content {
+    display: none;
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
