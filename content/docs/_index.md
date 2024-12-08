@@ -1,18 +1,13 @@
 ---
-title: Documentation
-next: first-page
+title: Blog
+next: first post
 ---
 
-This is a demo of the theme's documentation layout.
+This will cover blog stories. Currently, under construction. 
 
-## Hello, World!
+## Checker
 
-```go {filename="main.go"}
-package main
+```python {filename=what.py}
+import matplotlib
 
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
 ```
