@@ -1,0 +1,23 @@
+<div class="tabs">
+    <ul class="tab-buttons">
+      {{ range .Params.languages }}
+        <li>
+          <button onclick="showTab('{{ .id }}')">{{ .label }}</button>
+        </li>
+      {{ end }}
+    </ul>
+  
+    {{ range .Params.languages }}
+      <div id="{{ .id }}" class="tab-content" style="display: {{ if eq .id $.Params.defaultTab }}block{{ else }}none{{ end }}">
+        {{ .content | safeHTML }}
+      </div>
+    {{ end }}
+  </div>
+  
+  <script>
+    function showTab(tabId) {
+      var tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.style.display = 'none');
+      document.getElementById(tabId).style.display = 'block';
+    }
+  </script>
