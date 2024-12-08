@@ -1,2 +1,3 @@
 # CREOINSIGHT 
-## testing - before publishing 
+holding blog informations here. 
+all rights reserved. @glee2dev 

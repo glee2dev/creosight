@@ -19,13 +19,13 @@ markup:
 menu:
   main:
     - name: Posts
-      pageRef: /docs
+      pageRef: /posts
       weight: 1
     - name: About
       pageRef: /about
       weight: 2
     - name: Contact ↗
-      url: "https://github.com/glee2dev"
+      url: "mailto:gyunpyolee@gmail.com"
       weight: 3
     - name: GitHub
       weight: 4

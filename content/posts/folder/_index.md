@@ -1,7 +1,7 @@
 ---
-title: Folder
+title: Blogs
 type: docs
-prev: docs/first-page
+prev: docs/first-post
 next: docs/folder/leaf
 sidebar:
   open: true
