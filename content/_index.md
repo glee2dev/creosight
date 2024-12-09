@@ -3,7 +3,7 @@ title: Welcome to CREOINSIGHT
 toc: false
 ---
 
-{{< cards >}} {{< card link="about" title="About" icon="user" >}} {{< card link="posts" title="Blog" icon="book-open" >}} {{< card link="projects" title="Projects" icon="star" >}} {{< /cards >}}
+{{< cards cols="3">}} {{< card link="about" title="About" icon="user" >}} {{< card link="posts" title="Blog" icon="book-open" >}} {{< card link="projects" title="Projects" icon="star" >}} {{< /cards >}}
 
 ### Where Creativity Meets Data-Driven Design
 

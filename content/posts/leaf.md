@@ -1,6 +1,6 @@
 ---
 title: Second Page
-type: pages
+type: docs
 prev: /first-post
 next: /
 sidebar:

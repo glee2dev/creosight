@@ -1,6 +1,6 @@
 ---
 title: Blogs
-type: pages
+type: docs
 prev: /
 next: posts/first-post
 sidebar:

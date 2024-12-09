@@ -1,6 +1,6 @@
 ---
 title: First Page
-type: pages
+type: docs
 prev: /_index
 next: posts/leaf
 sidebar:
