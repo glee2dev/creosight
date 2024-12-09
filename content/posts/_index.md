@@ -2,7 +2,7 @@
 title: Posts
 layout: posts
 ---
-Í
+
 ## Blog Stories
 
 Welcome to the blog stories section! Here are the latest posts:
