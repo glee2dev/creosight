@@ -7,7 +7,10 @@ layout: posts
 
 Welcome to the blog stories section! Here are the latest posts:
 
-{{ range first 5 .Pages.ByDate.Reverse }}
-- [{{ .Title }}]({{ .Permalink }})  
-  <small>{{ .Date.Format "January 2, 2006" }}</small>
+{{ define "main" }}
+  <h2>Latest Pages</h2>
+  {{ $pages := .Pages.GroupByDate .Date.Add(-1*24*60*60*time.Hour) }}
+  {{ range $pages.Reverse | slice(0, 5) }}
+    <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+  {{ end }}
 {{ end }}

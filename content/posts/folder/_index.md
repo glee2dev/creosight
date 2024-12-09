@@ -1,8 +1,8 @@
 ---
 title: Blogs
-type: docs
-prev: docs/first-post
-next: docs/folder/leaf
+type: pages
+prev: posts/folder/first-post
+next: posts/folder/leaf
 sidebar:
   open: true
 ---
